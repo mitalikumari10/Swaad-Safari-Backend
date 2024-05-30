@@ -1,0 +1,423 @@
+[
+  {
+    "info": {
+      "id": "1",
+      "name": "Green Leaf Cafe",
+      "locality": "MG Road",
+      "costForTwo": "₹250 for two",
+      "cuisines": [
+        "South Indian",
+        "Chinese",
+        "Snacks",
+        "Beverages"
+      ],
+      "avgRating": 4.1,
+      "veg": true,
+      "menu": [
+        {
+          "itemName": "Dosa",
+          "price": "₹50",
+          "image": "./carouselhp/images/Dosa.avif"
+        },
+        {
+          "itemName": "Lassi",
+          "price": "₹100",
+          "image": "http://example.com/images/lassi.jpg"
+        },
+        {
+          "itemName": "Pav Bhaji",
+          "price": "₹120",
+          "image": "http://example.com/images/pav_bhaji.jpg"
+        },
+        {
+          "itemName": "Idli",
+          "price": "₹40",
+          "image": "http://example.com/images/idli.jpg"
+        },
+        {
+          "itemName": "Gulab Jamun",
+          "price": "₹50",
+          "image": "http://example.com/images/gulab_jamun.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "info": {
+      "id": "2",
+      "name": "Spice Hub",
+      "locality": "Park Street",
+      "costForTwo": "₹350 for two",
+      "cuisines": [
+        "North Indian",
+        "Chinese",
+        "Continental"
+      ],
+      "avgRating": 4.5,
+      "veg": false,
+      "menu": [
+        {
+          "itemName": "Butter Chicken",
+          "price": "₹250",
+          "image": "http://example.com/images/butter_chicken.jpg"
+        },
+        {
+          "itemName": "Chole Bhature",
+          "price": "₹150",
+          "image": "http://example.com/images/chole_bhature.jpg"
+        },
+        {
+          "itemName": "Hakka Noodles",
+          "price": "₹150",
+          "image": "http://example.com/images/hakka_noodles.jpg"
+        },
+        {
+          "itemName": "Momos",
+          "price": "₹120",
+          "image": "http://example.com/images/momos.jpg"
+        },
+        {
+          "itemName": "Rasmalai",
+          "price": "₹100",
+          "image": "http://example.com/images/rasmalai.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "info": {
+      "id": "3",
+      "name": "Taste of India",
+      "locality": "Main Market",
+      "costForTwo": "₹400 for two",
+      "cuisines": [
+        "Indian",
+        "Mughlai",
+        "Biryani"
+      ],
+      "avgRating": 4.2,
+      "veg": true,
+      "menu": [
+        {
+          "itemName": "Paneer Tikka",
+          "price": "₹200",
+          "image": "http://example.com/images/paneer_tikka.jpg"
+        },
+        {
+          "itemName": "Chicken Biryani",
+          "price": "₹300",
+          "image": "http://example.com/images/chicken_biryani.jpg"
+        },
+        {
+          "itemName": "Paratha",
+          "price": "₹80",
+          "image": "http://example.com/images/paratha.jpg"
+        },
+        {
+          "itemName": "Ice Cream",
+          "price": "₹60",
+          "image": "http://example.com/images/ice_cream.jpg"
+        },
+        {
+          "itemName": "Rasgulla",
+          "price": "₹50",
+          "image": "http://example.com/images/rasgulla.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "info": {
+      "id": "4",
+      "name": "Urban Tadka",
+      "locality": "City Center",
+      "costForTwo": "₹300 for two",
+      "cuisines": [
+        "North Indian",
+        "Snacks",
+        "Desserts"
+      ],
+      "avgRating": 4.0,
+      "veg": false,
+      "menu": [
+        {
+          "itemName": "Chole Bhature",
+          "price": "₹150",
+          "image": "http://example.com/images/chole_bhature.jpg"
+        },
+        {
+          "itemName": "Gulab Jamun",
+          "price": "₹50",
+          "image": "http://example.com/images/gulab_jamun.jpg"
+        },
+        {
+          "itemName": "Rolls",
+          "price": "₹120",
+          "image": "http://example.com/images/rolls.jpg"
+        },
+        {
+          "itemName": "Cake",
+          "price": "₹150",
+          "image": "http://example.com/images/cake.jpg"
+        },
+        {
+          "itemName": "Coffee",
+          "price": "₹60",
+          "image": "http://example.com/images/coffee.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "info": {
+      "id": "5",
+      "name": "Flavor Town",
+      "locality": "High Street",
+      "costForTwo": "₹280 for two",
+      "cuisines": [
+        "Fast Food",
+        "Italian",
+        "Chinese"
+      ],
+      "avgRating": 4.3,
+      "veg": false,
+      "menu": [
+        {
+          "itemName": "Pasta Alfredo",
+          "price": "₹200",
+          "image": "http://example.com/images/pasta_alfredo.jpg"
+        },
+        {
+          "itemName": "Tacos",
+          "price": "₹150",
+          "image": "http://example.com/images/tacos.jpg"
+        },
+        {
+          "itemName": "Burger",
+          "price": "₹120",
+          "image": "http://example.com/images/burger.jpg"
+        },
+        {
+          "itemName": "Khichdi",
+          "price": "₹100",
+          "image": "http://example.com/images/khichdi.jpg"
+        },
+        {
+          "itemName": "Pastry",
+          "price": "₹80",
+          "image": "http://example.com/images/pastry.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "info": {
+      "id": "6",
+      "name": "The Veggie Delight",
+      "locality": "Link Road",
+      "costForTwo": "₹220 for two",
+      "cuisines": [
+        "North Indian",
+        "South Indian",
+        "Snacks"
+      ],
+      "avgRating": 4.6,
+      "veg": true,
+      "menu": [
+        {
+          "itemName": "Cappuccino",
+          "price": "₹50",
+          "image": "http://example.com/images/cappuccino.jpg"
+        },
+        {
+          "itemName": "Muffin",
+          "price": "₹30",
+          "image": "http://example.com/images/muffin.jpg"
+        },
+        {
+          "itemName": "Rasmalai",
+          "price": "₹100",
+          "image": "http://example.com/images/rasmalai.jpg"
+        },
+        {
+          "itemName": "Pav Bhaji",
+          "price": "₹120",
+          "image": "http://example.com/images/pav_bhaji.jpg"
+        },
+        {
+          "itemName": "Chinese Bhel",
+          "price": "₹70",
+          "image": "http://example.com/images/chinese_bhel.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "info": {
+      "id": "7",
+      "name": "Gourmet Bites",
+      "locality": "Station Road",
+      "costForTwo": "₹350 for two",
+      "cuisines": [
+        "Continental",
+        "Italian",
+        "Mexican"
+      ],
+      "avgRating": 4.4,
+      "veg": false,
+      "menu": [
+        {
+          "itemName": "Rogan Josh",
+          "price": "₹350",
+          "image": "http://example.com/images/rogan_josh.jpg"
+        },
+        {
+          "itemName": "Dimsums",
+          "price": "₹200",
+          "image": "http://example.com/images/dimsums.jpg"
+        },
+        {
+          "itemName": "Noodles",
+          "price": "₹150",
+          "image": "http://example.com/images/noodles.jpg"
+        },
+        {
+          "itemName": "Cake",
+          "price": "₹150",
+          "image": "http://example.com/images/cake.jpg"
+        },
+        {
+          "itemName": "Coffee",
+          "price": "₹60",
+          "image": "http://example.com/images/coffee.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "info": {
+      "id": "8",
+      "name": "Cafe Bliss",
+      "locality": "Baker Street",
+      "costForTwo": "₹200 for two",
+      "cuisines": [
+        "Cafe",
+        "Bakery",
+        "Snacks"
+      ],
+      "avgRating": 4.1,
+      "veg": true,
+      "menu": [
+        {
+          "itemName": "Cappuccino",
+          "price": "₹50",
+          "image": "http://example.com/images/cappuccino.jpg"
+        },
+        {
+          "itemName": "Muffin",
+          "price": "₹30",
+          "image": "http://example.com/images/muffin.jpg"
+        },
+        {
+          "itemName": "Pastry",
+          "price": "₹80",
+          "image": "http://example.com/images/pastry.jpg"
+        },
+        {
+          "itemName": "Idli",
+          "price": "₹40",
+          "image": "http://example.com/images/idli.jpg"
+        },
+        {
+          "itemName": "Ice Cream",
+          "price": "₹60",
+          "image": "http://example.com/images/ice_cream.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "info": {
+      "id": "9",
+      "name": "Royal Feast",
+      "locality": "Queen's Road",
+      "costForTwo": "₹500 for two",
+      "cuisines": [
+        "North Indian",
+        "Mughlai",
+        "Chinese"
+      ],
+      "avgRating": 4.7,
+      "veg": false,
+      "menu": [
+        {
+          "itemName": "Rogan Josh",
+          "price": "₹350",
+          "image": "http://example.com/images/rogan_josh.jpg"
+        },
+        {
+          "itemName": "Dimsums",
+          "price": "₹200",
+          "image": "http://example.com/images/dimsums.jpg"
+        },
+        {
+          "itemName": "Paratha",
+          "price": "₹80",
+          "image": "http://example.com/images/paratha.jpg"
+        },
+        {
+          "itemName": "Gulab Jamun",
+          "price": "₹50",
+          "image": "http://example.com/images/gulab_jamun.jpg"
+        },
+        {
+          "itemName": "Noodles",
+          "price": "₹150",
+          "image": "http://example.com/images/noodles.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "info": {
+      "id": "10",
+      "name": "Healthy Treats",
+      "locality": "Fitness Avenue",
+      "costForTwo": "₹300 for two",
+      "cuisines": [
+        "Health Food",
+        "Salads",
+        "Beverages"
+      ],
+      "avgRating": 4.5,
+      "veg": true,
+      "menu": [
+        {
+          "itemName": "Quinoa Salad",
+          "price": "₹150",
+          "image": "http://example.com/images/quinoa_salad.jpg"
+        },
+        {
+          "itemName": "Green Smoothie",
+          "price": "₹100",
+          "image": "http://example.com/images/green_smoothie.jpg"
+        },
+        {
+          "itemName": "Khichdi",
+          "price": "₹100",
+          "image": "http://example.com/images/khichdi.jpg"
+        },
+        {
+          "itemName": "Pasta",
+          "price": "₹200",
+          "image": "http://example.com/images/pasta.jpg"
+        },
+        {
+          "itemName": "Rolls",
+          "price": "₹120",
+          "image": "http://example.com/images/rolls.jpg"
+        }
+      ]
+    }
+  }
+]
