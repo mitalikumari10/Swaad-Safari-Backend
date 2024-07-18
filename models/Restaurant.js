@@ -2,19 +2,48 @@ import mongoose from "mongoose";
 
 const restSchema = new mongoose.Schema({
     info: {
-        id: String,
-        name: String,
-        resimage: String,
-        locality: String,
-        costForTwo: String,
-        cuisines: [String],
-        avgRating: Number,
-        veg: Boolean,
+        id: {
+            type: String,
+            required: true,
+            unique: true
+        },
+        name: {
+            type: String,
+            required: true
+        },
+        resimage: {
+            type: String,
+            required: true
+        },
+        locality: {
+            type: String,
+            required: true
+        },
+        costForTwo: {
+            type: Number,
+            required: true
+        },
+        cuisines: {
+            type: [String],
+            required: true
+        },
+        avgRating: {
+            type: Number,
+            required: true
+        },
+        veg: {
+            type: Boolean,
+            required: true
+        },
         menu: [{
             itemName: String,
             price: String,
             image: String
-        }]
+        }],
+        city: {
+            type: String,
+            required: true
+        }
     }
 });
 

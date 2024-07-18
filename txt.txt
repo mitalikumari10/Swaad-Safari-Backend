@@ -1,0 +1,71 @@
+//index.js
+import { restaurants } from './models/Restaurant.js'; // Import Restaurant model
+import multer from 'multer';
+import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
+
+// s3 initalised
+const s3Client = new S3Client({ region: process.env.AWS_REGION });
+
+const storage = multer.memoryStorage();
+const upload = multer({ storage: storage });
+
+const uploadFileToS3 = async (file, folder) => {
+  const params = {
+    Bucket: process.env.S3_BUCKET_NAME,
+    Key: `${folder}/${file.originalname}`,
+    Body: file.buffer,
+    ContentType: file.mimetype,
+  };
+  
+  try {
+    const data = await s3Client.send(new PutObjectCommand(params));
+    return { Location: `https://${params.Bucket}.s3.amazonaws.com/${params.Key}` };
+  } catch (err) {
+    console.error("Error uploading file to S3:", err);
+    throw err;
+  }
+};
+
+app.get('/api/v1/newrestaurants', async (req, res) => {
+  try {
+    const restaurants = await restaurants.find();
+    res.json(restaurants);
+  } catch (error) {
+    console.error('Error fetching restaurants:', error);
+    res.status(500).json({ error: 'Error fetching restaurants' });
+  }
+});
+
+app.post('/api/v1/newrestaurants', upload.single('resimage'), async (req, res) => {
+  const { id, name, locality, costForTwo, cuisines, avgRating, veg, menu } = req.body;
+  const resimage = req.file;
+
+  try {
+    if (!resimage) {
+      throw new Error('File not uploaded');
+    }
+    const resImageUploadResult = await uploadFileToS3(resimage, 'restaurant-images');
+
+    const newRestaurant = new restaurants({
+      info: {
+        id,
+        name,
+        resimage: resImageUploadResult.Location,
+        locality,
+        costForTwo: parseFloat(costForTwo),
+        cuisines: JSON.parse(cuisines),
+        avgRating: parseFloat(avgRating),
+        veg: JSON.parse(veg),
+        menu: JSON.parse(menu),
+      },
+    });
+
+    await newRestaurant.save();
+    res.status(201).json(newRestaurant);
+  } catch (error) {
+    console.error('Error uploading file:', error);
+    res.status(500).json({ error: 'Error uploading file' });
+  }
+});
+
+//
